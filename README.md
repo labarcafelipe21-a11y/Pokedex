@@ -3,14 +3,17 @@
 Aplicación para gestionar una colección personal de Pokémon.
 Permite registrar, organizar y buscar Pokémon con sus tipos, nombres y la cantidad registrados.
 
-# Herramientas Usadas
-Hasta ahora, Node.js, Express y MySQL
+### Backend & Base de Datos
+* **Node.js & Express:** Framework principal para la construcción de la API REST.
+* **MySQL:** Motor de base de datos relacional para el almacenamiento de usuarios, pokémones y tipos.
+* **Sequelize ORM:** Herramientas de migración y mapeo de datos para la base de datos MySQL.
 
-## Instalación
+### Pruebas & Documentación de API
+* **Postman v11:** Herramienta utilizada para el diseño, ejecución y documentación de las pruebas de integración.
+* **JavaScript (Postman Sandbox):** Scripts de post-respuesta para la automatización del flujo de autenticación (guardado dinámico de tokens).
 
-1 Clonar el repositorio
-2 Entrar a `api/`, copiar `.env.example` como `.env` y rellenar los datos
-3 Crear la base de datos: `CREATE DATABASE pokedex_db;`
-4 Ejecutar la migración: `001_init.sql`
-5 Instalar dependencias: `npm install`
-6 Iniciar servidor: `npm run dev`
+### Control de Versiones
+* **Git & GitHub:** Gestión del código fuente.
+* **GitHub Desktop:** Cliente gráfico para el control de cambios y sincronización del repositorio.
+
+---
