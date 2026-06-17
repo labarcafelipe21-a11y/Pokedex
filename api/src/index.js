@@ -10,8 +10,12 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.json({ ok: true, mensaje: 'Pokédex API funcionando ' });
+  res.json({ ok: true, mensaje: 'Pokédex API funcionando' });
 });
+
+app.use('/api/auth',     require('./routes/auth'));
+app.use('/api/pokemons', require('./routes/pokemons'));
+app.use('/api/tipos',    require('./routes/tipos'));
 
 app.use((err, req, res, next) => {
   console.error(err);
